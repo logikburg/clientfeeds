@@ -1,0 +1,38 @@
+{
+    "name": "job-project",
+    "version": "0.0.1",
+    "author": "Sandeep Mogla <sandeep.mogla@gmail.com> (https://github.com/logikburg)",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/djett41/ionic-filter-bar.git"
+    },
+    "ignore": [
+    "demo",
+    "js",
+    "test",
+    ".gitignore",
+    "gulpfile.js",
+    "karma.conf.js",
+    "LICENSE",
+    "package.json",
+    "README.md"
+  ],
+    "dependencies": {},
+    "devDependencies": {
+        "ionic": "^1.0.0-rc.0",
+        "angular-mocks": "1.4.3"
+    },
+    "keywords": [
+    "mobile",
+    "html5",
+    "ionic",
+    "cordova",
+    "phonegap",
+    "search",
+    "filter",
+    "angularjs",
+    "angular"
+  ],
+    "license": "MIT",
+    "private": false
+}
