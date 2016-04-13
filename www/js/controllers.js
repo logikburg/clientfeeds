@@ -54,7 +54,7 @@ angular.module('starter.controllers', ['jett.ionic.filter.bar'])
 
 })
 
-.controller('FeedsCtrl', function ($scope) {
+.controller('FeedsCtrl', function ($scope, $timeout) {
     $scope.feeds = [
         {
             title: 'Reggae',
@@ -83,6 +83,21 @@ angular.module('starter.controllers', ['jett.ionic.filter.bar'])
                                 ];
 
     $scope.groups = [1, 2, 3, 4];
+
+    $scope.doRefresh = function () {
+        console.log('Refreshing!');
+
+        $timeout(function () {
+            //simulate async response
+            $scope.feeds.push('Feed ' + Math.floor(Math.random() * 1000) + 4);
+
+            //Stop the ion-refresher from spinning
+            $scope.$broadcast('scroll.refreshComplete');
+
+        }, 1000);
+
+    }
+
 })
 
 .controller('DetailCtrl', function ($scope, $stateParams) {});

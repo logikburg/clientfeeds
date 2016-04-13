@@ -3,6 +3,8 @@
         <button class="button button-icon icon ion-ios-search" ng-click="showFilterBar()"></button>
     </ion-nav-buttons>
     <ion-content scroll-event-interval="5">
+        <ion-refresher on-refresh="doRefresh()">
+        </ion-refresher>
         <div>
             <div ng-repeat="group in groups">
                 <div class="group-list">

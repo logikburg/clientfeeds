@@ -41,23 +41,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ion-affix'])
         }
     })
 
-    .state('app.browse', {
-            url: '/browse',
-            views: {
-                'menuContent': {
-                    templateUrl: 'templates/browse.html'
-                }
+    .state('app.feeds', {
+        url: '/feeds',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/feeds.html',
+                controller: 'FeedsCtrl'
             }
-        })
-        .state('app.feeds', {
-            url: '/feeds',
-            views: {
-                'menuContent': {
-                    templateUrl: 'templates/feeds.html',
-                    controller: 'FeedsCtrl'
-                }
-            }
-        })
+        }
+    })
 
     .state('app.single', {
         url: '/feeds/:feedId',
