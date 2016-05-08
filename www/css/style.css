@@ -1,1 +1,37 @@
 /* Empty. Add your own CSS if you like */
+
+.card a {
+    text-decoration: none;
+}
+
+.icon-15 {
+    font-size: 1rem;
+    color: darkgray;
+}
+
+.icon-20 {
+    font-size: 1.2rem;
+    color: darkgray;
+}
+
+.salary {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.location {
+    font-size: 0.8rem;
+}
+
+.sourceby {
+    font-size: 0.6rem;
+}
+
+.row.icon {
+    font-size: 1.2rem;
+}
+
+.col.apply a {
+    color: #5E626C;
+    font-weight: 400;
+}

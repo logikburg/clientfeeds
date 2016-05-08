@@ -10,7 +10,7 @@
                             Group {{group}}
                             <span class="badge badge-royal">{{n}}</span>
                         </div>
-                        <div class="card" ng-repeat="feed in feeds">
+                        <!--
                             <div class="item item-text-wrap">
                                 {{feed.title}}
                                 <br/> This is a basic Card which contains an item that has wrapping text.
@@ -24,6 +24,30 @@
                                 <a class="tab-item" href="#">
                                     <i class="icon ion-share"></i> Share
                                 </a>
+                            </div>
+-->
+                        <div ng-repeat="feed in feeds" class="card card-block card-primary">
+                            <div class="row">
+                                <a href="#" data="{{feed.jdurl}}">{{feed.postion}}</a>
+                            </div>
+                            <div class="row">
+                                <div class="col col-67 salary"><i class="icon ion-briefcase icon-15"></i>&nbsp;&nbsp;{{feed.salary}}</div>
+                                <div class="col location"><i class="icon ion-location icon-20"></i>&nbsp;&nbsp;{{feed.location}}</div>
+                            </div>
+                            <!--
+                            <div class="item tabs tabs-secondary tabs-icon-left">
+                                
+                                <a class="tab-item" href="#">
+                                </a>
+                            </div>
+-->
+                            <div class="row">
+                                <div class="col apply">
+                                    <a href="#">
+                                        <i class="icon ion-paper-airplane"></i>&nbsp;&nbsp;Apply
+                                    </a>
+                                </div>
+                                <div class="col"><small class="sourceby">sourceby:&nbsp;<cite title="Source Title">{{feed.source}}</cite></small></div>
                             </div>
                         </div>
                     </div>
