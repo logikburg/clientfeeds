@@ -1,4 +1,9 @@
-<ion-view view-title="Join Us">
+<ion-view view-title="Latest">
+
+    <ion-nav-buttons side="secondary">
+        <button class="button button-icon icon ion-search" ng-click="showFilterBar()"></button>
+    </ion-nav-buttons>
+
     <ion-content scroll-event-interval="5">
         <ion-refresher on-refresh="doRefresh()">
         </ion-refresher>
@@ -42,18 +47,31 @@
                             </div>
 -->
                             <div class="row">
-                                <div class="col apply">
+                                <div class="col favorite">
                                     <a href="#">
-                                        <i class="icon ion-paper-airplane"></i>&nbsp;&nbsp;Apply
+                                        <i class="icon ion-heart"></i>&nbsp;&nbsp;Favorite
                                     </a>
                                 </div>
-                                <div class="col"><small class="sourceby">sourceby:&nbsp;<cite title="Source Title">{{feed.source}}</cite></small></div>
+                                <div class="col apply">
+                                    <a href="#">
+                                        <i class="icon ion-paper-airplane"></i>&nbsp;&nbsp;Detail
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <small class="sourceby">sourceby:&nbsp;<cite title="Source Title">{{feed.source}}</cite></small>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div ng-hide="feeds.length > 0">
+            <div class="row">
+                <div class="col">No Connection</div>
+            </div>
         </div>
     </ion-content>
 </ion-view>

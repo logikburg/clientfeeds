@@ -25,13 +25,66 @@
 
 .sourceby {
     font-size: 0.6rem;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    font-style: italic;
 }
 
 .row.icon {
     font-size: 1.2rem;
 }
 
-.col.apply a {
-    color: #5E626C;
+.col.apply {
     font-weight: 400;
+    text-align: right;
+    padding-right: 15px;
+    font-size: 0.8rem;
+}
+
+.col.favorite {
+    font-weight: 400;
+    padding-right: 15px;
+    font-size: 12px;
+}
+
+.col.apply a {
+    color: #3888f5;
+}
+
+.col.favorite a {
+    color: #F53863;
+}
+
+.setting-item-divider {
+    text-transform: uppercase;
+    font-size: 10px !important;
+    color: rgba(29, 113, 199, 0.59) !important;
+}
+
+
+/* template */
+
+.grey_bg {
+    background: #363f46;
+}
+
+.form_logo img {
+    display: inline-block;
+    margin: auto;
+    max-width: 50%;
+}
+
+.form_logo {
+    margin: 30px 0;
+    opacity: 0.5;
+    text-align: center;
+    width: 100%;
+}
+
+.list.padding {
+    padding: 10px;
+}
+
+.text-12 {
+    font-size: 12px;
 }

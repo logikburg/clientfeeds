@@ -1,5 +1,100 @@
-<ion-view view-title="Search">
-  <ion-content>
-    <h1>Settings</h1>
-  </ion-content>
-</ion-view>
+<ion-view view-title="Settings">
+    <ion-content>
+        <form>
+            <div class="list">
+                
+                <div class="item item-divider setting-item-divider">
+                    System
+                </div>
+                
+                <div class="item item-toggle">
+                    Notifications
+                    <label class="toggle toggle-positive">
+                        <input type="checkbox">
+                        <div class="track">
+                            <div class="handle"></div>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="item item-input item-select">
+                    <div class="input-label">
+                        Frequency
+                    </div>
+                    <select>
+                        <option>Daily</option>
+                        <option selected>Hourly</option>
+                        <option>Weekly</option>
+                    </select>
+                </div>
+
+                <div class="item item-divider setting-item-divider">
+                    Profile
+                </div>
+
+                <div class="item item-input">
+                    <span class="input-label">Job Title</span>
+                    <input type="text" placeholder="i.e. Sr. Manager">
+                </div>
+
+                <div class="item item-input">
+                    <span class="input-label">Country</span>
+                    <input type="text" placeholder="i.e., United Kingdom">
+                </div>
+
+                <div class="item item-input">
+                    <span class="input-label">City</span>
+                    <input type="text" placeholder="i.e., London">
+                </div>
+
+                <div class="item item-input">
+                    <div class="input-label">
+                        Education
+                    </div>
+                    <select width="100%">
+                        <option>10</option>
+                        <option selected>10+2</option>
+                        <option>Diploma</option>
+                        <option>Graduation</option>
+                        <option>Post Graduation</option>
+                        <option>Doctrate</option>
+                    </select>
+                </div>
+
+                <div class="item item-input">
+                    <span class="input-label">Experience</span>
+                    <select width="100%">
+                        <option selected>Fresher</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                    </select>
+                </div>
+                
+                <div class="item item-input">
+                    <span class="input-label">Salary</span>
+                    <input type="text" placeholder="i.e. Sr. Manager">
+                </div>
+
+                <div class="item">
+                    Job Skill Set
+                    <tags-input width="100%" ng-model="tags" add-on-paste="true">
+                        <auto-complete></auto-complete>
+                    </tags-input>
+                </div>
+
+                <div class="row">
+                    <div class="col col-50">
+                        <button class="button button-block button-stable">Cancel</button>
+                    </div>
+                    <div class="col col-50">
+                        <button class="button button-block button-positive" type="submit">Save</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </ion-content>
+    </<ion-view>
