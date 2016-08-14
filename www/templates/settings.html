@@ -1,100 +1,206 @@
 <ion-view view-title="Settings">
-    <ion-content>
-        <form>
-            <div class="list">
-                
-                <div class="item item-divider setting-item-divider">
-                    System
-                </div>
-                
-                <div class="item item-toggle">
-                    Notifications
-                    <label class="toggle toggle-positive">
-                        <input type="checkbox">
-                        <div class="track">
-                            <div class="handle"></div>
-                        </div>
-                    </label>
-                </div>
+  <ion-content>
+    <form>
+      <div class="list">
 
-                <div class="item item-input item-select">
-                    <div class="input-label">
-                        Frequency
-                    </div>
-                    <select>
-                        <option>Daily</option>
-                        <option selected>Hourly</option>
-                        <option>Weekly</option>
-                    </select>
-                </div>
+        <div class="item item-divider setting-item-divider">
+          System
+        </div>
 
-                <div class="item item-divider setting-item-divider">
-                    Profile
-                </div>
-
-                <div class="item item-input">
-                    <span class="input-label">Job Title</span>
-                    <input type="text" placeholder="i.e. Sr. Manager">
-                </div>
-
-                <div class="item item-input">
-                    <span class="input-label">Country</span>
-                    <input type="text" placeholder="i.e., United Kingdom">
-                </div>
-
-                <div class="item item-input">
-                    <span class="input-label">City</span>
-                    <input type="text" placeholder="i.e., London">
-                </div>
-
-                <div class="item item-input">
-                    <div class="input-label">
-                        Education
-                    </div>
-                    <select width="100%">
-                        <option>10</option>
-                        <option selected>10+2</option>
-                        <option>Diploma</option>
-                        <option>Graduation</option>
-                        <option>Post Graduation</option>
-                        <option>Doctrate</option>
-                    </select>
-                </div>
-
-                <div class="item item-input">
-                    <span class="input-label">Experience</span>
-                    <select width="100%">
-                        <option selected>Fresher</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6</option>
-                    </select>
-                </div>
-                
-                <div class="item item-input">
-                    <span class="input-label">Salary</span>
-                    <input type="text" placeholder="i.e. Sr. Manager">
-                </div>
-
-                <div class="item">
-                    Job Skill Set
-                    <tags-input width="100%" ng-model="tags" add-on-paste="true">
-                        <auto-complete></auto-complete>
-                    </tags-input>
-                </div>
-
-                <div class="row">
-                    <div class="col col-50">
-                        <button class="button button-block button-stable">Cancel</button>
-                    </div>
-                    <div class="col col-50">
-                        <button class="button button-block button-positive" type="submit">Save</button>
-                    </div>
-                </div>
+        <div class="item item-toggle">
+          Notifications
+          <label class="toggle toggle-positive">
+            <input type="checkbox">
+            <div class="track">
+              <div class="handle"></div>
             </div>
-        </form>
-    </ion-content>
-    </<ion-view>
+          </label>
+        </div>
+
+        <div class="item item-input item-select">
+          <div class="input-label">
+            Frequency
+          </div>
+          <select>
+            <option>Daily</option>
+            <option selected>Hourly</option>
+            <option>Weekly</option>
+          </select>
+        </div>
+
+        <div class="item item-divider setting-item-divider">
+          Profile
+        </div>
+
+        <div class="item item-input">
+          <span class="input-label">Job Title</span>
+          <input type="text" placeholder="i.e. Sr. Manager">
+        </div>
+
+        <div class="item item-input">
+          <span class="input-label">Country</span>
+          <input type="text" placeholder="i.e., United Kingdom">
+        </div>
+
+        <div class="item item-input">
+          <span class="input-label">City</span>
+          <input type="text" placeholder="i.e., London">
+        </div>
+
+        <div class="item item-input">
+          <div class="input-label">
+            Highest Education
+          </div>
+          <select width="100%">
+            <option>10</option>
+            <option selected>10+2</option>
+            <option>Diploma</option>
+            <option>Graduation</option>
+            <option>Post Graduation</option>
+            <option>Doctrate</option>
+          </select>
+        </div>
+
+        <div class="item item-input">
+          <div class="input-label">
+            Subject
+          </div>
+          <select width="100%">
+            <option>B.A.</option>
+            <option selected>B.Sc.</option>
+            <option>Diploma</option>
+            <option>Graduation</option>
+            <option>Post Graduation</option>
+            <option>Doctrate</option>
+          </select>
+        </div>
+
+        <div class="item item-input">
+          <span class="input-label">Experience (yrs.)</span>
+          <select width="100%">
+            <option selected>Fresher</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12+</option>
+          </select>
+        </div>
+
+
+        <div class="item item-input">
+          <span class="input-label">Industry</span>
+          <select width="100%">
+            <option selected>Any</option>
+            <option>Automotive/ Ancillaries</option>
+            <option>Banking/ Financial Services</option>
+            <option>Bio Technology &amp; Life Sciences</option>
+            <option>Chemicals/Petrochemicals</option>
+            <option>Construction &amp; Engineering</option>
+            <option>FMCG</option>
+            <option>Customer Service</option>
+            <option>Education</option>
+            <option>Electronics Manufacturing</option>
+            <option>Publishing/Media</option>
+            <option>Entertainment</option>
+            <option>Insurance</option>
+            <option>ITES/BPO</option>
+            <option>IT/ Computers - Hardware</option>
+            <option>IT/ Computers - Software</option>
+            <option>KPO/Analytics</option>
+            <option>Machinery/ Equipment Mfg.</option>
+            <option>Oil/ Gas/ Petroleum</option>
+            <option>Pharmaceutical</option>
+            <option>Plastic/ Rubber</option>
+            <option>Power/Energy</option>
+            <option>Real Estate</option>
+            <option>Recruitment/Staffing/RPO</option>
+            <option>Retailing</option>
+            <option>Semiconductor Manufacturing</option>
+            <option>Telecom</option>
+            <option>Advertising/PR/Events</option>
+            <option>Dairy/Forestry/Fishing</option>
+            <option>Agriculture</option>
+            <option>Aviation/Aerospace</option>
+            <option>Alternate Energy</option>
+            <option>Wellness/Fitness/Sports</option>
+            <option>Beverages/ Liquor</option>
+            <option>Cement</option>
+            <option>Ceramics &amp; Sanitary Ware</option>
+            <option>Comodities Trading</option>
+            <option>Consultancy</option>
+            <option>Courier/ Freight/ Transportation</option>
+            <option>Dotcom/Internet/E-commerce</option>
+            <option>Electrical/Switchgear</option>
+            <option>Environmental Service</option>
+            <option>Facility management</option>
+            <option>Fertilizer/ Pesticides</option>
+            <option>Food &amp; Packaged Food</option>
+            <option>Textiles / Fabrics / Garments</option>
+            <option>Gems &amp; Jewellery</option>
+            <option>GLASS</option>
+            <option>Government / Public Sector</option>
+            <option>Defence</option>
+            <option>Consumer Electronics/Appliances</option>
+            <option>Hospitals/Healthcare/Diagnostics</option>
+            <option>HVAC</option>
+            <option>Catering/Hospitality</option>
+            <option>Import / Export</option>
+            <option>Iron/ Steel</option>
+            <option>Internet Service Provider</option>
+            <option>Law Enforcement</option>
+            <option>Security Services</option>
+            <option>Leather</option>
+            <option>Maritime Transportation</option>
+            <option>Market Research</option>
+            <option>Medical Transcription</option>
+            <option>Mining</option>
+            <option>Railways Speciality/ Infrastructure</option>
+            <option>NGO/Social Services</option>
+            <option>Non-Ferrous Metals</option>
+            <option>Office Equipment/Automation</option>
+            <option>Paints</option>
+            <option>Paper</option>
+            <option>Printing/ Packaging</option>
+            <option>Public Relations (PR)</option>
+            <option>Shipping/ Marine Services</option>
+            <option>Social Media</option>
+            <option>Travel/ Tourism</option>
+            <option>Tyres</option>
+            <option>Wood</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+
+        <div class="item item-input">
+          <span class="input-label">Salary Range</span>
+          <input type="text" placeholder="i.e. Sr. Manager">
+        </div>
+
+        <div class="item">
+          Job Skill Set
+          <tags-input width="100%" ng-model="tags" add-on-paste="true">
+            <auto-complete></auto-complete>
+          </tags-input>
+        </div>
+
+        <div class="row">
+          <div class="col col-50">
+            <button class="button button-block button-stable">Cancel</button>
+          </div>
+          <div class="col col-50">
+            <button class="button button-block button-positive" type="submit">Save</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </ion-content>
+  </<ion-view>
