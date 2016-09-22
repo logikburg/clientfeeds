@@ -12,7 +12,7 @@
                 <div class="group-list">
                     <div class="list">
                         <div class="item item-divider" ion-affix data-affix-within-parent-with-class="group-list">
-                            Group {{group}}
+                            {{group}}
                             <span class="badge badge-royal">{{n}}</span>
                         </div>
                         <!--
@@ -68,10 +68,8 @@
                 </div>
             </div>
         </div>
-        <div ng-hide="feeds.length > 0">
-            <div class="row">
-                <div class="col">No Connection</div>
-            </div>
+        <div ng-hide="feeds.length > 0" class="center">
+            <ion-spinner></ion-spinner>
         </div>
     </ion-content>
 </ion-view>

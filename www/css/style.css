@@ -64,8 +64,8 @@
 
 /* template */
 
-.grey_bg {
-    background: #363f46;
+.bg {
+    background: #FDFDFD;
 }
 
 .form_logo img {
@@ -87,4 +87,11 @@
 
 .text-12 {
     font-size: 12px;
+}
+
+.center {
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    position: absolute;
 }
